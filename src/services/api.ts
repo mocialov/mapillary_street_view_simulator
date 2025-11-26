@@ -3,7 +3,7 @@
 import { decode } from '../utils/polyline';
 
 const MAPILLARY_ACCESS_TOKEN = process.env.REACT_APP_MAPILLARY_TOKEN || '';
-const OSRM_DIRECTIONS_API = 'http://router.project-osrm.org/route/v1/driving/';
+const OSRM_DIRECTIONS_API = 'https://router.project-osrm.org/route/v1/driving/';
 const MAPILLARY_API_BASE = 'https://graph.mapillary.com';
 
 export interface MapillaryImage {
