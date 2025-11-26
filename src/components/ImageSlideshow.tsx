@@ -49,7 +49,7 @@ const ImageSlideshow: React.FC<ImageSlideshowProps> = ({
     }, playbackSpeed);
 
     return () => clearInterval(interval);
-  }, [isPlaying, playbackSpeed, isLoading]); // Added isLoading to know when to pause vs loop
+  }, [isPlaying, playbackSpeed, isLoading, images.length]); // Added isLoading to know when to pause vs loop
 
   // Auto-start playback when first images arrive
   useEffect(() => {

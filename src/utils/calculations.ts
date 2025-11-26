@@ -147,7 +147,6 @@ export function generateEvenlySpacedPoints(
     if (nextPointDistance - accumulatedDistance <= remainingInSegment) {
       // Point is in current segment
       const distanceAlongSegment = distanceIntoSegment + (nextPointDistance - accumulatedDistance);
-      const fraction = distanceAlongSegment / segmentLength;
 
       const segmentStart = routeCoords[currentSegmentIndex];
       const segmentEnd = routeCoords[currentSegmentIndex + 1];

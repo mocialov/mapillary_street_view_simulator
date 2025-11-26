@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import RouteForm, { RouteFormData } from './components/RouteForm';
 import ImageSlideshow from './components/ImageSlideshow';
 import { geocodeAddress, getRouteCoordinates, getMapillaryImagesBatch } from './services/api';
-import { calculateInitialCompassBearing, generateEvenlySpacedPoints, distance } from './utils/calculations';
+import { generateEvenlySpacedPoints, distance } from './utils/calculations';
 import './App.css';
 
 interface LoadingState {
